@@ -47,7 +47,7 @@ click the Other Node button.
 Type "Sprite2D" in the search bar to filter nodes and double-click on Sprite2D
 to create the node.
 
-.. image:: img/scripting_first_script_add_sprite_node.png
+.. image:: img/scripting_first_script_add_sprite2d_node.png
 
 Your Scene tab should now only have a Sprite2D node.
 
@@ -55,7 +55,7 @@ Your Scene tab should now only have a Sprite2D node.
 
 A Sprite2D node needs a texture to display. In the Inspector on the right, you
 can see that the Texture property says "[empty]". To display the Godot icon,
-click and drag the file ``icon.png`` from the FileSystem dock onto the Texture
+click and drag the file ``icon.svg`` from the FileSystem dock onto the Texture
 slot.
 
 .. image:: img/scripting_first_script_setting_texture.png
@@ -77,7 +77,7 @@ Creating a new script
 To create and attach a new script to our node, right-click on Sprite2D in the
 scene dock and select "Attach Script".
 
-.. image:: img/scripting_first_script_attach_script.png
+.. image:: img/scripting_first_script_attach_script.jpg
 
 The Attach Node Script window appears. It allows you to select the script's
 language and file path, among other options.
@@ -174,8 +174,8 @@ It should display "Hello, world!".
 
 .. image:: img/scripting_first_script_print_hello_world.png
 
-Delete the ``_init()`` function, so you're only left with the line ``extends
-Sprite2D``.
+To continue, delete the ``_init()`` function, so you're only left with
+the line ``extends Sprite2D``.
 
 Turning around
 --------------
@@ -292,7 +292,7 @@ class's constant Vector2.UP, a vector pointing up, and rotate it by calling the
 is a vector pointing forward relative to our icon. Multiplied by our ``speed``
 property, it gives us a velocity we can use to move the node forward.
 
-We add ``velocity * delta`` to the node's ``position`` to move it. The position
+To move the node's ``position``, we add ``velocity * delta``. The position
 itself is of type :ref:`Vector2 <class_Vector2>`, a built-in type in Godot
 representing a 2D vector.
 
